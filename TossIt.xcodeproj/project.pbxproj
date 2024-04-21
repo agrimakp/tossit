@@ -11,7 +11,38 @@
 		40645B202BC364A8005360E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40645B1F2BC364A8005360E4 /* ContentView.swift */; };
 		40645B222BC364AA005360E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40645B212BC364AA005360E4 /* Assets.xcassets */; };
 		40645B252BC364AA005360E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40645B242BC364AA005360E4 /* Preview Assets.xcassets */; };
+		4094BBD22BCE27B000B8B202 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094BBD12BCE27B000B8B202 /* Coin.swift */; };
+		4094BBF82BCE75FC00B8B202 /* TossItWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094BBF72BCE75FC00B8B202 /* TossItWatchApp.swift */; };
+		4094BBFA2BCE75FC00B8B202 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094BBF92BCE75FC00B8B202 /* ContentView.swift */; };
+		4094BBFC2BCE75FE00B8B202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4094BBFB2BCE75FE00B8B202 /* Assets.xcassets */; };
+		4094BBFF2BCE75FE00B8B202 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4094BBFE2BCE75FE00B8B202 /* Preview Assets.xcassets */; };
+		4094BC022BCE75FE00B8B202 /* Toss It.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4094BBF52BCE75FC00B8B202 /* Toss It.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4094BC062BCF2A3300B8B202 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4094BBD12BCE27B000B8B202 /* Coin.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4094BC002BCE75FE00B8B202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40645B122BC364A8005360E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4094BBF42BCE75FC00B8B202;
+			remoteInfo = "TossItWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4094BBF02BCE75A300B8B202 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4094BC022BCE75FE00B8B202 /* Toss It.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40645B1A2BC364A8005360E4 /* TossIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TossIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,13 +50,23 @@
 		40645B1F2BC364A8005360E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40645B212BC364AA005360E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40645B242BC364AA005360E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		40645B312BC6B213005360E4 /* dddExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dddExtension.swift; sourceTree = "<group>"; };
-		40645B332BC6B213005360E4 /* ddd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ddd.swift; sourceTree = "<group>"; };
-		40645B352BC6B213005360E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4094BBD12BCE27B000B8B202 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		4094BBF52BCE75FC00B8B202 /* Toss It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toss It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4094BBF72BCE75FC00B8B202 /* TossItWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossItWatchApp.swift; sourceTree = "<group>"; };
+		4094BBF92BCE75FC00B8B202 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4094BBFB2BCE75FE00B8B202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4094BBFE2BCE75FE00B8B202 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		40645B172BC364A8005360E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4094BBF22BCE75FC00B8B202 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				40645B1C2BC364A8005360E4 /* TossIt */,
-				40645B302BC6B213005360E4 /* ddd */,
+				4094BBF62BCE75FC00B8B202 /* TossItWatch Watch App */,
 				40645B1B2BC364A8005360E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				40645B1A2BC364A8005360E4 /* TossIt.app */,
+				4094BBF52BCE75FC00B8B202 /* Toss It.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +97,7 @@
 		40645B1C2BC364A8005360E4 /* TossIt */ = {
 			isa = PBXGroup;
 			children = (
+				4094BBD12BCE27B000B8B202 /* Coin.swift */,
 				40645B1D2BC364A8005360E4 /* TossItApp.swift */,
 				40645B1F2BC364A8005360E4 /* ContentView.swift */,
 				40645B212BC364AA005360E4 /* Assets.xcassets */,
@@ -71,14 +114,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		40645B302BC6B213005360E4 /* ddd */ = {
+		4094BBF62BCE75FC00B8B202 /* TossItWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				40645B312BC6B213005360E4 /* dddExtension.swift */,
-				40645B332BC6B213005360E4 /* ddd.swift */,
-				40645B352BC6B213005360E4 /* Info.plist */,
+				4094BBF72BCE75FC00B8B202 /* TossItWatchApp.swift */,
+				4094BBF92BCE75FC00B8B202 /* ContentView.swift */,
+				4094BBFB2BCE75FE00B8B202 /* Assets.xcassets */,
+				4094BBFD2BCE75FE00B8B202 /* Preview Content */,
 			);
-			path = ddd;
+			path = "TossItWatch Watch App";
+			sourceTree = "<group>";
+		};
+		4094BBFD2BCE75FE00B8B202 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4094BBFE2BCE75FE00B8B202 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,14 +143,33 @@
 				40645B162BC364A8005360E4 /* Sources */,
 				40645B172BC364A8005360E4 /* Frameworks */,
 				40645B182BC364A8005360E4 /* Resources */,
+				4094BBF02BCE75A300B8B202 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4094BC012BCE75FE00B8B202 /* PBXTargetDependency */,
+			);
+			name = TossIt;
+			productName = TossIt;
+			productReference = 40645B1A2BC364A8005360E4 /* TossIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4094BBF42BCE75FC00B8B202 /* TossItWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4094BC032BCE75FE00B8B202 /* Build configuration list for PBXNativeTarget "TossItWatch Watch App" */;
+			buildPhases = (
+				4094BBF12BCE75FC00B8B202 /* Sources */,
+				4094BBF22BCE75FC00B8B202 /* Frameworks */,
+				4094BBF32BCE75FC00B8B202 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TossIt;
-			productName = TossIt;
-			productReference = 40645B1A2BC364A8005360E4 /* TossIt.app */;
+			name = "TossItWatch Watch App";
+			productName = "TossItWatch Watch App";
+			productReference = 4094BBF52BCE75FC00B8B202 /* Toss It.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -112,6 +183,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					40645B192BC364A8005360E4 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					4094BBF42BCE75FC00B8B202 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 				};
@@ -130,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				40645B192BC364A8005360E4 /* TossIt */,
+				4094BBF42BCE75FC00B8B202 /* TossItWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +219,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4094BBF32BCE75FC00B8B202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4094BBFF2BCE75FE00B8B202 /* Preview Assets.xcassets in Resources */,
+				4094BBFC2BCE75FE00B8B202 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -151,12 +235,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4094BBD22BCE27B000B8B202 /* Coin.swift in Sources */,
 				40645B202BC364A8005360E4 /* ContentView.swift in Sources */,
 				40645B1E2BC364A8005360E4 /* TossItApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4094BBF12BCE75FC00B8B202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4094BC062BCF2A3300B8B202 /* Coin.swift in Sources */,
+				4094BBFA2BCE75FC00B8B202 /* ContentView.swift in Sources */,
+				4094BBF82BCE75FC00B8B202 /* TossItWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4094BC012BCE75FE00B8B202 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4094BBF42BCE75FC00B8B202 /* TossItWatch Watch App */;
+			targetProxy = 4094BC002BCE75FE00B8B202 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		40645B262BC364AA005360E4 /* Debug */ = {
@@ -211,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -219,6 +322,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Debug;
 		};
@@ -268,27 +372,31 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
 		40645B292BC364AA005360E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TossIt/Preview Content\"";
 				DEVELOPMENT_TEAM = W4GQ7V7GJ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Toss It";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +408,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qvistn.TossIt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qvistn.TossIt2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -315,14 +424,17 @@
 		40645B2A2BC364AA005360E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TossIt/Preview Content\"";
 				DEVELOPMENT_TEAM = W4GQ7V7GJ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Toss It";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -334,8 +446,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.qvistn.TossIt;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qvistn.TossIt2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -343,6 +456,70 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4094BC042BCE75FE00B8B202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TossItWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = W4GQ7V7GJ9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.qvistn.TossIt2;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qvistn.TossIt2.watch;
+				PRODUCT_NAME = "Toss It";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		4094BC052BCE75FE00B8B202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TossItWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = W4GQ7V7GJ9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.qvistn.TossIt2;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qvistn.TossIt2.watch;
+				PRODUCT_NAME = "Toss It";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
@@ -363,6 +540,15 @@
 			buildConfigurations = (
 				40645B292BC364AA005360E4 /* Debug */,
 				40645B2A2BC364AA005360E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4094BC032BCE75FE00B8B202 /* Build configuration list for PBXNativeTarget "TossItWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4094BC042BCE75FE00B8B202 /* Debug */,
+				4094BC052BCE75FE00B8B202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
