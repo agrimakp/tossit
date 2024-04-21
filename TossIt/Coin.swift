@@ -22,6 +22,17 @@ struct Coin: View {
     @State private var coin = toss()
     @State private var headCount = 0
     @State private var tailCount = 0
+    @State private var displayText = "Tap the coin"
+    @State private var showText = true
+    
+    func onAnimationFinish() -> Void {
+        showText = true
+        displayText = "\(sides[coin] ?? "touch the coin to spin") \(coin == "head" ? headCount : tailCount)"
+    }
+    
+    func onAnimationStart() -> Void {
+        showText = false
+    }
     
     var body: some View {
         VStack {
@@ -33,6 +44,12 @@ struct Coin: View {
                 } else {
                     tailCount += 1
                 }
+                
+               withAnimation(.easeOut(duration: 1.0)) {
+                   onAnimationStart()
+               } completion: {
+                   onAnimationFinish()
+               }
             } label: {
                 ZStack {
                     // back
@@ -48,7 +65,8 @@ struct Coin: View {
                         .opacity(coin == "head" ? 1 : 0)
                         .clipShape(Circle())
                         .shadow(radius: 15)
-
+                    
+                    
                     // front
                     Image("tail")
                         .resizable()
@@ -68,9 +86,10 @@ struct Coin: View {
             }
             .buttonStyle(PlainButtonStyle())
             
-            Text("\(sides[coin] ?? "touch the coin to spin") \(coin == "head" ? headCount : tailCount)")
+            Text(displayText)
                 .foregroundStyle(.white)
                 .font(.title3)
+                .opacity(showText ? 1 : 0)
         }
         .padding()
     }
