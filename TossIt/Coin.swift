@@ -20,12 +20,19 @@ let sides = ["head": "Heads", "tail": "Tails"]
 struct Coin: View {
     @State private var rotation = 0.0
     @State private var coin = toss()
+    @State private var headCount = 0
+    @State private var tailCount = 0
     
     var body: some View {
         VStack {
             Button {
                 rotation += 180.0 * 10
                 coin = toss()
+                if (coin == "head") {
+                    headCount += 1
+                } else {
+                    tailCount += 1
+                }
             } label: {
                 ZStack {
                     // back
@@ -61,7 +68,7 @@ struct Coin: View {
             }
             .buttonStyle(PlainButtonStyle())
             
-            Text(sides[coin] ?? "Nani")
+            Text("\(sides[coin] ?? "touch the coin to spin") \(coin == "head" ? headCount : tailCount)")
                 .foregroundStyle(.white)
                 .font(.title3)
         }
@@ -70,5 +77,7 @@ struct Coin: View {
 }
 
 #Preview {
-    Coin()
+    VStack {
+        Coin()
+    }.padding(100).background(.black)
 }
