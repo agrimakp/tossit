@@ -22,12 +22,13 @@ struct Coin: View {
     @State private var coin = toss()
     @State private var headCount = 0
     @State private var tailCount = 0
+    @State private var count = ["head": 0, "tail": 0]
     @State private var displayText = "Tap the coin"
     @State private var showText = true
     
     func onAnimationFinish() -> Void {
         showText = true
-        displayText = "\(sides[coin] ?? "touch the coin to spin") \(coin == "head" ? headCount : tailCount)"
+        displayText = "\(sides[coin] ?? "touch the coin to spin") \(count[coin] ?? 0)"
     }
     
     func onAnimationStart() -> Void {
@@ -39,11 +40,7 @@ struct Coin: View {
             Button {
                 rotation += 180.0 * 10
                 coin = toss()
-                if (coin == "head") {
-                    headCount += 1
-                } else {
-                    tailCount += 1
-                }
+                count[coin] = (count[coin] ?? 0) + 1
                 
                withAnimation(.easeOut(duration: 1.0)) {
                    onAnimationStart()
